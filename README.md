@@ -1,7 +1,14 @@
 # UberClock
 
 
-<video src='https://www.erikoostveen.co.uk/githubAssets/ClockStarted.mp4' width=180/>
+
+<video width="320" height="240" autoplay muted>
+  <source src="[movie.mp4](https://www.erikoostveen.co.uk/githubAssets/ClockStarted.mp4)" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+
+
+
 
 
 
