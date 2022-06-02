@@ -1,0 +1,75 @@
+AiEsp32RotaryEncoderNumberSelector.h
+-----------------------------------------------
+--In order to disable acceleration (when turning encoder) I added "encoder->setAcceleration(0);" to the code below:
+
+        if (range < 20)
+            encoder->setAcceleration(0);
+        else if (range < 60)
+            encoder->setAcceleration(20);
+        else if (range < 200)
+            encoder->setAcceleration(100);
+        else if (range < 1000)
+            encoder->setAcceleration(300);
+        else
+            encoder->setAcceleration(500);
+
+
+DFRobot_UI.cpp
+-----------------------------------------------
+--The standard UI background of the whole screen is very light blue but I'd rather have it black.
+Look for:
+
+#if defined(ESP32) || defined(ESP8266) ||  defined(ARDUINO_SAM_ZERO)||(__AVR_ATmega2560__)
+  bgColor = 0xFFFF;
+  #else
+    bgColor = 0x0000;
+  #endif
+
+--... and change bgColor = 0xFFFF (white background) to bgColor = 0x0000
+
+--Look for:
+
+void DFRobot_UI::drawClickButton(sObject_t *obj,char *text , bool click)
+{
+    if (theme == MODERN) {
+         _gdl->fillRoundRect(obj->posx - 1, obj->posy - 1, obj->width + 2, obj->height + 2, 11, DCYAN_RGB565);
+         _gdl->fillRoundRect(obj->posx, obj->posy, obj->width, obj->height, 10, obj->fgColor);
+     }
+     else {
+    #if defined(ESP32) || defined(ESP8266) ||  defined(ARDUINO_SAM_ZERO)||(__AVR_ATmega2560__)
+        fillRoundRectP(obj->posx, obj->posy, obj->width, obj->height,4,obj->bgColor,obj->lvColor);
+    #else
+        _gdl->fillRect(obj->posx, obj->posy, obj->width, obj->height,obj->fgColor);
+        #endif
+        }
+
+--...and change DCYAN_RGB565 to BLACK_RGB565 (button outline changes to black when pressed)
+
+--Look for:
+
+void DFRobot_UI::drawButton(void *obj) {
+  sButton_t *btn = (sButton_t *)obj;
+  if (theme == MODERN) {
+    _gdl->fillRoundRect(btn->posx - 1, btn->posy - 1, btn->width + 2, btn->height + 2, 11, DCYAN_RGB565);
+    _gdl->fillRoundRect(btn->posx, btn->posy, btn->width, btn->height, 10, btn->bgColor);
+  }
+  else {
+
+--...and change DCYAN_RGB565 to BLACK_RGB565 (button outline changes to black before pressing)
+
+--Look for:
+
+void DFRobot_UI::drawButton(void *obj) {
+  sButton_t *btn = (sButton_t *)obj;
+  if (theme == MODERN) {
+    _gdl->fillRoundRect(btn->posx - 1, btn->posy - 1, btn->width + 2, btn->height + 2, 11, BLACK_RGB565);
+    _gdl->fillRoundRect(btn->posx, btn->posy, btn->width, btn->height, 10, btn->bgColor);
+  }
+
+--... and change 10 to 4 or so (corner radius of buttons)
+
+
+DFRobot_UI.cpp
+-----------------------------------------------
+--Changed all delay(100) to delay(1)
+
