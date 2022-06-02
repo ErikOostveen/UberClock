@@ -1,6 +1,6 @@
 # UberClock
 
-A smart MIDI master clock designed for synth jam sessions (up to 6 people). This master clock, and its MIDI distribution boxes, ensures that anyone in the jam session always -and automatically- starts at the downbeat keeping everything and everyone nicely in sync.
+A smart MIDI master clock designed for synth jam sessions (up to 6 people). This master clock, and its MIDI distribution boxes, ensures that anyone in the jam session always -and automatically- start at the downbeat keeping everything and everyone nicely in sync. The Restart feature allows for an on-the-fly resync of all gear in case one or more participants start to run out of sync.
 
 Below: MIDI Clock after tapping "Re/Start" and sending a MIDI Start message at the first available downbeat
 
