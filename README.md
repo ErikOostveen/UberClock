@@ -8,8 +8,5 @@ https://user-images.githubusercontent.com/40121318/171625142-d3acb920-1bf6-4a96-
 https://user-images.githubusercontent.com/40121318/171626748-3977ce2a-428e-48a7-bb96-43719874ea2a.mp4
 * MIDI Clock after tapping "Stop" (sending a MIDI Stop message)
 
-
-
-
-
-
+![DFRobot Components](https://user-images.githubusercontent.com/40121318/171664700-2a892432-a826-4981-a90e-702dea44947c.png)
+* A good number of components are from https://www.dfrobot.com/
