@@ -10,3 +10,6 @@ https://user-images.githubusercontent.com/40121318/171626748-3977ce2a-428e-48a7-
 
 ![DFRobot Components](https://user-images.githubusercontent.com/40121318/171664700-2a892432-a826-4981-a90e-702dea44947c.png)
 * A good number of components are from https://www.dfrobot.com/
+
+![PCBs_Wiring](https://user-images.githubusercontent.com/40121318/171876208-120e7262-75a6-49fe-abf5-4807657e300a.png)
+* Wiring it all up
