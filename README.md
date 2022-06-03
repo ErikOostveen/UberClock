@@ -13,3 +13,7 @@ https://user-images.githubusercontent.com/40121318/171626748-3977ce2a-428e-48a7-
 
 ![PCBs_Wiring](https://user-images.githubusercontent.com/40121318/171876208-120e7262-75a6-49fe-abf5-4807657e300a.png)
 * Wiring it all up
+
+Here's the clock in action at a synth jam session with 6 people (I am sitting front right). Have a look around and spot the UberClock and the six UberBoxes
+
+https://youtu.be/V3unf-pRc8s
