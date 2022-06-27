@@ -1,7 +1,6 @@
 # UberClock
 
-- This project can also be found on 
-https://www.pcbway.com/project/shareproject/Smart_MIDI_Master_Clock_UberClock_project_413c1d34.html
+- This project can also be found on <a href="https://www.pcbway.com/project/shareproject/Smart_MIDI_Master_Clock_UberClock_project_413c1d34.html" target="_blank">PCBway</a> 
 
 A smart MIDI master clock designed for synth jam sessions (up to 6 people). This master clock, and its MIDI distribution boxes, ensures that anyone in the jam session always -and automatically- start at the downbeat keeping everything and everyone nicely in sync. The Restart feature allows for an on-the-fly re-sync of all gear in case one or more participants start to run out of sync.
 
